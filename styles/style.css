@@ -1,0 +1,156 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#info-panel, #attraction-panel {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    max-height: calc(100% - 20px);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+#info-title {
+    margin-top: 10px;
+}
+
+#info-image-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#info-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+#search-form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#search-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+#suggestions-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 8px;
+}
+
+#suggestions-list li {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+#suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+
+.attraction-button {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+}
+
+.attraction-button:hover {
+    text-decoration: none;
+}
+
+#attraction-details div {
+    margin-top: 10px;
+}
+
+
+#attraction-panel {
+    display: none;
+}
+
+.close-btn {
+    display: inline-block;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    background: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close-btn:hover {
+    background: #e0e0e0;
+}
+
+
+#info-attractions h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#info-attractions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.attraction-item {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.attraction-link {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.attraction-link:hover {
+    color: #0056b3;
+}

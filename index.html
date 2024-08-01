@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 5</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div id="info-panel">
+        <span id="close-info-panel" class="close-btn">Fechar</span>
+        <h1 id="info-title">Selecione um local.</h1>
+        <p id="info-description">Clique em um marcador ou pesquise o nome do local.</p>
+        <div id="info-images"></div>
+        <div id="info-attractions"></div>
+        <div id="attraction-details" style="display: none;"></div>
+    </div>
+    <div id="attraction-panel">
+        <span id="close-attraction-panel" class="close-btn">Fechar</span>
+        <h2 id="attraction-title"></h2>
+        <div id="attraction-description"></div>
+        <div id="attraction-images"></div>
+        <div id="attraction-type"></div>
+        <div id="attraction-tips"></div>
+    </div>
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Pesquise...">
+        <ul id="suggestions-list"></ul>
+    </form>
+
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIV24OMH_VAEGBTv_CMVriz-gQrN3H9dQ&loading=async&libraries=marker&callback=initMap"></script>
+    <script src="scripts/local.js"></script>
+    <script src="scripts/atrativo.js"></script>
+    <script src="scripts/destino.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
