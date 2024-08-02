@@ -11,7 +11,7 @@ const port = 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.json());
-
+console.log("TEST");
 app.get('/destinations', async (req, res) => {
     try {
         const destinos = await Destino.model.find();
