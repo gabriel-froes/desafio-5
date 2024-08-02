@@ -6,7 +6,7 @@
         },
         {
             "src": "/destinations",
-            "dest": "/"
+            "dest": "/destinations"
         }
     ]
 }
