@@ -6,12 +6,12 @@ const Destino = require('./models/destino');
 require('dotenv').config();
 
 const app = express();
-const port = 3000;
+const port = 9000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.json());
-console.log("TEST");
+
 app.get('/destinations', async (req, res) => {
     try {
         const destinos = await Destino.model.find();
