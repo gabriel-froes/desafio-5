@@ -7,6 +7,9 @@
   "devDependencies": {
     "nodemon": "^3.1.4"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
